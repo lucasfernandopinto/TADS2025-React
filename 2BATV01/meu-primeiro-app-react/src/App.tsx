@@ -1,5 +1,7 @@
 // importa o React da biblioteca 'react'.
 import React from 'react';
+// importa o componente 'Mensagem' do arquivo 'Mensagem.tsx'
+import Mensagem from './components/Mensagem';
 
 // cria um componente chamado 'App'.
 function App() {
@@ -12,12 +14,16 @@ function App() {
   return ( 
     <> 
       {
-       // exibe o texto "Meu primeiro app React" na página.
+        // exibe o texto "Meu primeiro app React" na página.
+        <h1>Meu primeiro app React</h1>
       }
-      <h1>Meu primeiro app React</h1>
       {
-      // define um paragrafo <p> que escreve "Olá, meu nome é Ana e nasci em 2005"
-      <p>Olá, meu nome é {nome} e nasci em {anoNascimento}.</p>
+        // define um paragrafo <p> que escreve "Olá, meu nome é Ana e nasci em 2005"
+        <p>Olá, meu nome é {nome} e nasci em {anoNascimento}.</p>
+      }
+      {
+        // renderiza o componente 'Mensagem'
+        <Mensagem />
       }
 
     </>
