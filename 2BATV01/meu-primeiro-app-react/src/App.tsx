@@ -37,6 +37,11 @@ function App() {
         <Conteudo />
       }
       {
+        // cria um botão com o texto "Mostrar Alerta".
+        <button onClick={() => alert("Você clicou no botão!")}>Mostrar Alerta</button>
+      }
+      
+      {
         // renderiza o componente 'Rodape'
         <Rodape />
       }
