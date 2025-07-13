@@ -2,6 +2,9 @@
 import React from 'react';
 // importa o componente 'Mensagem' do arquivo 'Mensagem.tsx'
 import Mensagem from './components/Mensagem';
+import Cabecalho from './components/Cabecalho';
+import Conteudo from './components/Conteudo';
+import Rodape from './components/Rodape';
 
 // cria um componente chamado 'App'.
 function App() {
@@ -14,6 +17,10 @@ function App() {
   return ( 
     <> 
       {
+        // renderiza o componente 'Cabecalho'
+        <Cabecalho />
+      }
+      {
         // exibe o texto "Meu primeiro app React" na página.
         <h1>Meu primeiro app React</h1>
       }
@@ -25,6 +32,15 @@ function App() {
         // renderiza o componente 'Mensagem'
         <Mensagem />
       }
+      {
+        // renderiza o componente 'Conteudo'
+        <Conteudo />
+      }
+      {
+        // renderiza o componente 'Rodape'
+        <Rodape />
+      }
+      
 
     </>
   );
