@@ -8,6 +8,12 @@ import Cabecalho from './components/Cabecalho';
 import Conteudo from './components/Conteudo';
 // importa o componente 'Rodape' do arquivo 'Rodape.tsx'
 import Rodape from './components/Rodape';
+// importa o componente 'Topo' do arquivo 'Topo.tsx'
+import Topo from './components/Topo';
+// importa o componente 'Meio' do arquivo 'Meio.tsx'
+import Meio from './components/Meio';
+// importa o componente 'Base' do arquivo 'Base.tsx'
+import Base from './components/Base';
 
 // cria um componente chamado 'App'.
 function App() {
@@ -36,6 +42,12 @@ function App() {
       }
 
       {
+        // renderiza o componente 'Topo'
+        <Topo />
+      }
+
+
+      {
         // exibe o texto "Meu primeiro app React" na página.
         <h1>Meu primeiro app React</h1>
       }
@@ -54,6 +66,12 @@ function App() {
         // renderiza o componente 'Conteudo'
         <Conteudo />
       }
+
+      {
+        // renderiza o componente 'Meio'
+        <Meio />
+      }
+
 
       {
         // cria um botão com o texto "Mostrar Alerta".
@@ -75,6 +93,11 @@ function App() {
         <Rodape />
       }
       
+      {
+        // renderiza o componente 'Base'
+        <Base />
+      }
+
 
     </>
   );
