@@ -15,6 +15,10 @@ import Meio from './components/Meio';
 // importa o componente 'Base' do arquivo 'Base.tsx'
 import Base from './components/Base';
 
+// importa o arquivo de CSS para estilização.
+import './App.css';
+
+
 // cria um componente chamado 'App'.
 function App() {
   // declaração da variável 'nome' com o valor "Ana".

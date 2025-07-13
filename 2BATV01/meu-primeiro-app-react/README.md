@@ -1,69 +1,29 @@
-# React + TypeScript + Vite
+# Meu Primeiro App React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém um projeto React simples, criado com Vite e TypeScript, desenvolvido como parte de uma série de exercícios para compreender os fundamentos do React.
 
-Currently, two official plugins are available:
+## Conteúdo do Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O projeto `Meu Primeiro App React` demonstra conceitos básicos e essenciais do desenvolvimento com React, incluindo:
 
-## Expanding the ESLint configuration
+* **Estrutura do Projeto:** Compreensão dos arquivos e pastas iniciais de um projeto React.
+* **JSX e Template Expressions:** Utilização de variáveis e expressões JavaScript diretamente no JSX para renderização dinâmica de conteúdo.
+* **Criação e Importação de Componentes:** Desenvolvimento de componentes reutilizáveis e sua integração na aplicação principal.
+* **Hierarquia de Componentes:** Organização de múltiplos componentes para formar uma estrutura de página coesa (cabeçalho, conteúdo, rodapé, etc.).
+* **Eventos de Clique:** Implementação de interatividade através de funções `onClick`, tanto inline quanto externas, para disparar ações.
+* **Funções de Renderização:** Criação de funções que retornam JSX para modularizar a lógica de apresentação.
+* **Layout com Múltiplos Componentes:** Consolidação da estrutura da página usando diversos componentes para diferentes seções.
+* **Estilização Simples:** Aplicação de estilos básicos usando Tailwind CSS para melhorar a apresentação visual dos componentes.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Exercícios Realizados
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Abaixo está a lista dos exercícios que foram implementados neste projeto, seguindo a numeração original:
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1.  **Estrutura do Projeto e Comentários:** Criação do projeto com Vite e TypeScript, e adição de comentários explicativos no `App.tsx`.
+2.  **JSX com Template Expressions:** Declaração e exibição de variáveis (`nome`, `anoNascimento`) em uma frase usando JSX.
+3.  **Criação e Importação de Componente:** Criação do componente `Mensagem.tsx` e sua importação/uso no `App.tsx`.
+4.  **Hierarquia de Componentes:** Criação e organização dos componentes `Cabecalho.tsx`, `Conteudo.tsx` e `Rodape.tsx` no `App.tsx`.
+5.  **Evento de Clique com Função Inline:** Adição de um botão que exibe um alerta com uma função `onClick` inline.
+6.  **Evento de Clique com Função Externa:** Adição de um botão que chama uma função externa (`executarAcao`) ao ser clicado.
+7.  **Função de Renderização:** Criação e uso da função `renderizarMensagem` que retorna JSX.
+8.  **Layout com Múltiplos Componentes:** Criação e organização dos componentes `Topo.tsx`, `Meio.tsx` e `Base.tsx` no `App.tsx` para formar a estrutura completa da página.
