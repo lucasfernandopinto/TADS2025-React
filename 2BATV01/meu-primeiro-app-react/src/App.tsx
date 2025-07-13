@@ -13,6 +13,12 @@ function App() {
   // declaração da variável 'anoNascimento' com o valor 2005.
   const anoNascimento = 2005;
 
+  // define uma função para ser chamada pelo evento de clique.
+  // exibe no console 'Função chamada com sucesso.'
+  const executarAcao = () => {
+    console.log("Função chamada com sucesso.");
+  };
+
   // contém o que será renderizado na tela.
   return ( 
     <> 
@@ -40,6 +46,11 @@ function App() {
         // cria um botão com o texto "Mostrar Alerta".
         <button onClick={() => alert("Você clicou no botão!")}>Mostrar Alerta</button>
       }
+      {
+        // cria um segundo botão com o texto "Executar Ação" que chama a função 'executarAcao'.
+        <button onClick={executarAcao}>Executar Ação</button>
+      }
+     
       
       {
         // renderiza o componente 'Rodape'
